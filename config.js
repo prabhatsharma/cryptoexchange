@@ -18,7 +18,7 @@ System.config({
 
   packages: {
     "app": {
-      "main": "bootstrap",
+      "main": "main",
       "format": "system",
       "defaultExtension": "ts",
       "meta": {

@@ -6,14 +6,14 @@ import {HomeComponent} from './HomeComponent/home.component';
 import {DataComponent} from './DataComponent/data.component';
 
 @Component({
-    selector : 'app',
-    templateUrl : 'app/app.component.html',
-    directives : [ROUTER_DIRECTIVES, NgClass]
+    selector: 'app',
+    templateUrl: 'app/app.component.html',
+    directives: [ROUTER_DIRECTIVES, NgClass]
 })
 @RouteConfig([
-  {path:'/home', name: 'Home', component: HomeComponent},
-  {path:'/data', name: 'Data', component: DataComponent}
+    { path: '/home', name: 'Home', component: HomeComponent },
+    { path: '/data', name: 'Data', component: DataComponent }
 ])
-export class AppComponent{
+export class AppComponent {
     name = "Prabhat Sharma";
 }
