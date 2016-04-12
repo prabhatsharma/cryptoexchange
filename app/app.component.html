@@ -1,0 +1,15 @@
+<div>
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+            <li [ngClass]="{active: current=='home'}"><a [routerLink]="['Home']" (click)="current='home'">Home</a></li>
+            <li [ngClass]="{active: current=='data'}"><a [routerLink] = "['Data']" (click)="current='data'">Data</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Section for child components</h2>
+        <p>
+            User is {{name}}
+        </p>
+        <router-outlet></router-outlet>
+    </section>
+</div>

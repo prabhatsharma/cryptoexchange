@@ -1,0 +1,3 @@
+<div>
+    Home Component
+</div>

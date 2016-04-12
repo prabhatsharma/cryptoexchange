@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    <base href="/">
+  <title>Cryptocurrency exchange</title>
+  <script src="jspm_packages/npm/angular2@2.0.0-beta.14/bundles/angular2-polyfills.min.js"></script>
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <app></app>
+  <script>
+    // var readyForMainLoad
+    // if (location.origin.match(/localhost/)) {
+    //   System.trace = true
+    //   readyForMainLoad = System.import('systemjs-hot-reloader').then(function(HotReloader){
+    //     hr = new HotReloader.default('http://localhost:9089');
+    //   });
+    // }
+    // Promise.resolve(readyForMainLoad).then(function() {
+    //   System.import("app/main").then(function(){ console.log("running") });
+    // });
+    
+    System.import("app/main").then(function(){ console.log("running") });
+  </script>
+</body>
+</html>
