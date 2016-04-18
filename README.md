@@ -21,7 +21,7 @@ Download ethereum wallet from: https://www.ethereum.org/
 
 Go to resources\node\geth subfolder of ethereum wallet and run geth manually from command line by:
 
-> geth --fast --rpc --rpccorsdomain "http://localhost:8080" console
+> geth --fast --rpc --rpccorsdomain "http://127.0.0.1:8080" console
 
 This will start the ethereum node and will allow you to run commands from console to do something or see sync progress. Since we will be using json-rpc over http and will be using it via XHR we will need to to provide cors parameter else ur requests from browser to ethereum node via json-rpc will fail. --fast helps in fast syncing.
 
