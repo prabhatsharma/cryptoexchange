@@ -3,6 +3,7 @@
         <ul class="nav navbar-nav">
             <li [ngClass]="{active: current=='home'}"><a [routerLink]="['Home']" (click)="current='home'">Home</a></li>
             <li [ngClass]="{active: current=='data'}"><a [routerLink] = "['Data']" (click)="current='data'">Data</a></li>
+            <li [ngClass]="{active: current=='wallet'}"><a [routerLink] = "['Wallet']" (click)="current='wallet'">Wallet</a></li>
         </ul>
     </nav>
     <section>

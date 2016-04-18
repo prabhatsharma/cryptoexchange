@@ -4,6 +4,7 @@ import {RouteConfig, ROUTER_DIRECTIVES} from 'angular2/router';
 
 import {HomeComponent} from './HomeComponent/home.component';
 import {DataComponent} from './DataComponent/data.component';
+import {WalletComponent} from './WalletComponent/wallet.component';
 
 @Component({
     selector: 'app',
@@ -12,7 +13,8 @@ import {DataComponent} from './DataComponent/data.component';
 })
 @RouteConfig([
     { path: '/home', name: 'Home', component: HomeComponent },
-    { path: '/data', name: 'Data', component: DataComponent }
+    { path: '/data', name: 'Data', component: DataComponent },
+    { path: '/wallet', name: 'Wallet', component: WalletComponent }
 ])
 export class AppComponent {
     name = "Prabhat Sharma";
