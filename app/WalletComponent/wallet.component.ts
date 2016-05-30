@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 
-declare var Web3:any;
+declare var Web3:any;   //This is how you include an existing javascript library in typescript
 
 @Component({
     selector : 'ps-wallet',
@@ -9,6 +9,7 @@ declare var Web3:any;
 export class WalletComponent {
     
     web3 = {};
+    syncStatus = {}
     
     constructor() {
         var ethereumNodeURL = 'http://localhost:8545'
@@ -17,6 +18,7 @@ export class WalletComponent {
         web3.setProvider(new web3.providers.HttpProvider(ethereumNodeURL));
         console.log(web3);
         this.web3 = web3;
+        this.syncStatus = JSON.stringify(web3.eth.syncing);
         console.log("Sync status : ", web3.eth.syncing)
     }
 }
